@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 16:30:58 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/11/29 08:50:30 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/11 14:54:47 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,36 +23,15 @@ void	numbersperchunk(t_help *help)
 	numbs = 0;
 	size = ftp_lstsize(&(help->final));
 	if (size <= 100)
-	{
 		numbs = size / 5;
-	}
 	else if (size > 100)
-	{
 		numbs = size / 10;
-	}
 	chunks = size / numbs;
 	if (size % numbs != 0)
 		chunks += 1;
 	help->numbsperchunk = numbs;
 	help->numofchunks = chunks;
 }
-
-// void	numbersperchunk(t_help *help)
-// {
-// 	int	size;
-// 	int	numbs;
-// 	int	chunks;
-
-// 	size = ftp_lstsize(&(help->final));
-// 	numbs = ((3 * size) / 40) + (45 / 2);
-// 	while (numbs % 5 != 0)
-// 		numbs += 1;
-// 	chunks = size / numbs;
-// 	if (size % numbs != 0)
-// 		chunks += 1;
-// 	help->numbsperchunk = numbs;
-// 	help->numofchunks = chunks;
-// }
 
 void	r_or_rr(t_stack **stacka, int pos_first, int pos_second, int size)
 {
@@ -104,9 +83,7 @@ int	hold_first(t_stack **a, int chunks, int numofchunk)
 	position = 0;
 	while (getnode(*a, position)->content
 		> numofchunk - 1 + (numofchunk * chunks))
-	{
 		position++;
-	}
 	return (position);
 }
 

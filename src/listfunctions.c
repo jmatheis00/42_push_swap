@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 18:03:35 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/09/20 14:47:14 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/11 14:55:20 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,7 @@ t_stack	*ftp_lstlast(t_stack *lst)
 	if (lst == NULL)
 		return (NULL);
 	while (lst->next != NULL)
-	{
 		lst = lst->next;
-	}
 	return (lst);
 }
 

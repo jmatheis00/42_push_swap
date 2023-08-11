@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 17:16:37 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/09/21 14:27:09 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/11 14:55:47 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ int	main(int argv, char **argc)
 	return (0);
 }
 
-	// system("leaks push_swap");
-	// if (is_sorted(&(help.final), &(help.stackb)))
-	// 	printf("sorted\n");
+/*
+system("leaks push_swap");
+if (is_sorted(&(help.final), &(help.stackb)))
+	printf("sorted\n");
+*/

@@ -6,13 +6,14 @@
 #    By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/03 19:33:15 by jmatheis          #+#    #+#              #
-#    Updated: 2022/09/20 14:45:29 by jmatheis         ###   ########.fr        #
+#    Updated: 2023/08/11 14:56:23 by jmatheis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 		= push_swap
-CFLAGS		= -Wall -Werror -Wextra -g #-fsanitize=address -g
 CC			= cc
+CFLAGS		= -Wall -Werror -Wextra -g #-fsanitize=address -g
+
 FILES		= src/errors.c \
 				src/input.c \
 				src/chunks.c \
@@ -36,7 +37,9 @@ LIBS =	lib/printf/libftprintf.a \
 PRINTF = lib/printf
 LIBFT = lib/libft
 
-#RULES
+# ************* #
+#     RULES     #
+# ************* #
 
 $(NAME): $(LIBS) $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LIBS)
