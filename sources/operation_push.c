@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operations_a.c                                     :+:      :+:    :+:   */
+/*   operation_push.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 14:53:51 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/07/27 17:57:21 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:42 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 int	pb(t_stack **froma, t_stack **tob)
 {

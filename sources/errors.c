@@ -6,11 +6,11 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:29:07 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/09/21 14:26:29 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:28 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 static int	checksigns(char *argc, int j)
 {

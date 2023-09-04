@@ -6,7 +6,7 @@
 #    By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/03 19:33:15 by jmatheis          #+#    #+#              #
-#    Updated: 2023/08/11 14:56:23 by jmatheis         ###   ########.fr        #
+#    Updated: 2023/09/04 17:41:59 by jmatheis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,22 +14,24 @@ NAME 		= push_swap
 CC			= cc
 CFLAGS		= -Wall -Werror -Wextra -g #-fsanitize=address -g
 
-FILES		= src/errors.c \
-				src/input.c \
-				src/chunks.c \
-				src/find_in_list.c \
-				src/listfunctions.c \
-				src/operation_push.c \
-				src/operation_rot_down.c \
-				src/operation_rot_up.c \
-				src/operation_swap.c \
-				src/pushswap.c \
-				src/sorting.c \
-				src/transform.c
+SRCS		= errors.c \
+				input.c \
+				chunks.c \
+				find_in_list.c \
+				listfunctions.c \
+				operation_push.c \
+				operation_rot_down.c \
+				operation_rot_up.c \
+				operation_swap.c \
+				pushswap.c \
+				sorting.c \
+				transform.c
+HEADER 		= pushswap.h
 
-OBJ = $(FILES:.c=.o)
+M_SRCS		= $(addprefix ./sources/, $(SRCS))
+M_HEADER	= $(addprefix ./includes/, $(HEADER))
 
-INCLUDES = src/pushswap.h
+OBJ = $(M_SRCS:%.c=%.o)
 
 LIBS =	lib/printf/libftprintf.a \
 		lib/libft/libft.a
@@ -44,7 +46,7 @@ LIBFT = lib/libft
 $(NAME): $(LIBS) $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LIBS)
 
-%.o: %.c $(INCLUDES)
+%.o: %.c $(M_HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 all: $(NAME)
@@ -56,7 +58,7 @@ lib/libft/libft.a:
 	@$(MAKE) -C $(LIBFT)
 
 clean:
-	rm -f src/*.o
+	rm -f $(OBJ)
 	make fclean -C $(PRINTF)
 	make fclean -C $(LIBFT)
 

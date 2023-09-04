@@ -6,11 +6,11 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/29 00:54:25 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/08/25 14:11:23 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:31 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 t_stack	*getnode(t_stack *stack, int pos)
 {

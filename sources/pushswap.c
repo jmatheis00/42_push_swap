@@ -6,11 +6,11 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 17:16:37 by jmatheis          #+#    #+#             */
-/*   Updated: 2023/09/04 15:50:32 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:53 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 void	free_stacka_stackb(t_stack **stacka, t_stack **stackb)
 {

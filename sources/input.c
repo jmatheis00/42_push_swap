@@ -6,11 +6,11 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 18:49:27 by jmatheis          #+#    #+#             */
-/*   Updated: 2023/08/11 14:55:11 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:33 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 static char	arr_or_num(char *argc)
 {

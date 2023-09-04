@@ -6,11 +6,11 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 18:01:06 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/09/20 14:47:30 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:56 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 static void	sort_three(t_stack **stacka)
 {

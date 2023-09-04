@@ -6,11 +6,11 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 10:37:53 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/09/20 14:47:48 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:58 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 static void	deletenode(t_stack **stack, int con)
 {

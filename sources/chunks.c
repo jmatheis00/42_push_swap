@@ -6,11 +6,11 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 16:30:58 by jmatheis          #+#    #+#             */
-/*   Updated: 2023/08/11 14:54:47 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:24 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 // 100 are splitted into 5 chunks and > 100 integers into 10 chunks.
 

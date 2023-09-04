@@ -6,11 +6,11 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 17:53:18 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/08/04 09:49:39 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 17:40:51 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pushswap.h"
+#include "../includes/pushswap.h"
 
 int	sa(t_stack **stack)
 {
