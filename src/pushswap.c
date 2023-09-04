@@ -6,11 +6,53 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 17:16:37 by jmatheis          #+#    #+#             */
-/*   Updated: 2023/08/11 14:55:47 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 15:50:32 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pushswap.h"
+
+void	free_stacka_stackb(t_stack **stacka, t_stack **stackb)
+{
+	t_stack	*temp;
+
+	while (*stacka)
+	{
+		temp = (*stacka)->next;
+		free(*stacka);
+		*stacka = temp;
+	}
+	while (*stackb)
+	{
+		temp = (*stackb)->next;
+		free(*stackb);
+		*stackb = temp;
+	}	
+}
+
+void	free_otherstacks(t_stack **final, t_stack **copy, t_stack **sortedcopy)
+{
+	t_stack	*temp;
+
+	while (*final)
+	{
+		temp = (*final)->next;
+		free(*final);
+		*final = temp;
+	}
+	while (*copy)
+	{
+		temp = (*copy)->next;
+		free(*copy);
+		*copy = temp;
+	}
+	while (*sortedcopy)
+	{
+		temp = (*sortedcopy)->next;
+		free(*sortedcopy);
+		*sortedcopy = temp;
+	}	
+}
 
 int	main(int argv, char **argc)
 {
@@ -22,22 +64,18 @@ int	main(int argv, char **argc)
 		|| doublenumb(&help.stacka) == 1)
 	{
 		write(2, "Error\n", 6);
+		free_stacka_stackb(&help.stacka, &help.stackb);
 		return (1);
 	}
-	if (is_sorted(&help.stacka, &help.stackb) == 1)
-		return (0);
-	if (ftp_lstsize(&help.stacka) <= 5)
+	if (is_sorted(&help.stacka, &help.stackb) == 0
+		&& ftp_lstsize(&help.stacka) <= 5)
 		sort_five(&(help.stacka), &(help.stackb));
-	else
+	else if (is_sorted(&help.stacka, &help.stackb) == 0)
 	{
 		finalstack(&help);
 		sort_hundred(&(help.final), &(help.stackb), &help);
 	}
+	free_stacka_stackb(&help.stacka, &help.stackb);
+	free_otherstacks(&help.final, &help.copy, &help.sortedcopy);
 	return (0);
 }
-
-/*
-system("leaks push_swap");
-if (is_sorted(&(help.final), &(help.stackb)))
-	printf("sorted\n");
-*/
