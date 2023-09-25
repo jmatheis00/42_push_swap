@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 18:06:44 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/11/29 08:41:34 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/25 14:56:40 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		ft_putnbr_fd(n / 10, fd);
 		n = n % 10;
-	}	
+	}
 	ft_putchar(n + 48, fd);
 }

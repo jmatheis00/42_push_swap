@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 16:30:58 by jmatheis          #+#    #+#             */
-/*   Updated: 2023/09/04 17:40:24 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/25 14:56:14 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void	r_or_rr(t_stack **stacka, int pos_first, int pos_second, int size)
 			rra(stacka);
 			pos_second++;
 		}
-	}	
+	}
 }
 
 void	onechunk(t_stack **stacka, t_stack **stackb, int chunks, int numofchunk)

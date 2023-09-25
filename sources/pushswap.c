@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 17:16:37 by jmatheis          #+#    #+#             */
-/*   Updated: 2023/09/04 17:40:53 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/25 14:56:06 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	free_stacka_stackb(t_stack **stacka, t_stack **stackb)
 		temp = (*stackb)->next;
 		free(*stackb);
 		*stackb = temp;
-	}	
+	}
 }
 
 void	free_otherstacks(t_stack **final, t_stack **copy, t_stack **sortedcopy)
@@ -51,7 +51,7 @@ void	free_otherstacks(t_stack **final, t_stack **copy, t_stack **sortedcopy)
 		temp = (*sortedcopy)->next;
 		free(*sortedcopy);
 		*sortedcopy = temp;
-	}	
+	}
 }
 
 int	main(int argv, char **argc)
