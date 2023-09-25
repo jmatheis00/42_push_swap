@@ -37,7 +37,7 @@ The available set of operations that needed to be implemented:
 git clone https://github.com/jmatheis00/42_push_swap.git && cd 42_push_swap
 ```
 
-2. Compile the library using make:
+2. Compile the project using make:
 
 ```zsh
 make
